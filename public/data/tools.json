@@ -1,10 +1,29 @@
 [
   {
     "name": "滅火器",
-    "description": "用於撲滅初起火災的小型裝置，常見於各場所。"
+    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "keywords": [
+      "滅火器",
+      "extinguisher",
+      "fire extinguisher"
+    ]
   },
   {
     "name": "消防水喉",
-    "description": "連接固定水源，用於提供持續水流以撲滅大型火災。"
+    "description": "連接固定水源，用於提供持續水流以撲滅大型火災。",
+    "keywords": [
+      "消防水喉",
+      "fire hose",
+      "water hose"
+    ]
+  },
+  {
+    "name": "消防喉轆",
+    "description": "配備在牆上，用於快速拉出水帶進行滅火。",
+    "keywords": [
+      "消防喉轆",
+      "hose reel",
+      "fire hose reel"
+    ]
   }
 ]

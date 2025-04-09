@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const ToolsPage = () => {
   const [tools, setTools] = useState([])
@@ -6,45 +7,54 @@ const ToolsPage = () => {
   const [filtered, setFiltered] = useState([])
 
   useEffect(() => {
-    const loadTools = async () => {
-      try {
-        const res = await fetch('/data/tools.json')
-        if (!res.ok) throw new Error('Network response was not ok')
-        const data = await res.json()
+    fetch('/data/tools.json')
+      .then(res => res.json())
+      .then((data) => {
         setTools(data)
-      } catch (error) {
-        console.error('無法載入工具資料：', error)
-      }
-    }
-    loadTools()
+        setFiltered([])
+      })
   }, [])
 
   useEffect(() => {
-    const result = tools.filter(tool =>
-      tool.name.includes(search.trim())
-    )
-    setFiltered(result)
+    if (search.trim() === '') {
+      setFiltered([])
+    } else {
+      const result = tools.filter(tool =>
+        tool.keywords.some((kw: string) =>
+          kw.toLowerCase().includes(search.trim().toLowerCase())
+        )
+      )
+      setFiltered(result)
+    }
   }, [search, tools])
 
   return (
     <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">🔥 搜尋消防工具</h1>
+      <h1 className="text-xl font-bold mb-4">🔥 消防工具搜尋</h1>
       <input
         type="text"
-        placeholder="輸入工具名稱..."
+        placeholder="請輸入工具名稱（中或英文）..."
         className="border p-2 mb-4 w-full"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      {filtered.map((tool, idx) => (
-        <div key={idx} className="mb-4">
-          <h2 className="text-lg font-semibold">{tool.name}</h2>
-          <p>{tool.description}</p>
-        </div>
-      ))}
-      {search && filtered.length === 0 && (
-        <p className="text-red-600">未找到相關工具。</p>
+      {filtered.length > 0 ? (
+        <ul className="mb-6">
+          {filtered.map((tool, idx) => (
+            <li key={idx} className="mb-2">
+              <h2 className="text-lg font-semibold">{tool.name}</h2>
+              <p>{tool.description}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-gray-500">請輸入工具名稱以搜尋相關內容。</p>
       )}
+      <Link href="/">
+        <button className="px-4 py-2 bg-gray-500 text-white rounded mt-4">
+          返回主頁
+        </button>
+      </Link>
     </div>
   )
 }
