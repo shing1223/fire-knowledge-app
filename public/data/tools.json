@@ -8,4 +8,31 @@
       "fire extinguisher"
     ]
   }
+  {
+    "name": "水",
+    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "keywords": [
+      "水",
+      "apple",
+      "sex"
+    ]
+  }
+  {
+    "name": "360火器",
+    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "keywords": [
+      "滅火器",
+      "extinguisher",
+      "000"
+    ]
+  }
+  {
+    "name": "999",
+    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "keywords": [
+      "9",
+      "8",
+      "fxtinguisher"
+    ]
+  }
 ]
