@@ -7,32 +7,50 @@
       "extinguisher",
       "fire extinguisher"
     ]
-  }
+  },
   {
-    "name": "水",
-    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "name": "煙霧探測器",
+    "description": "用於感測火災時的煙霧，能夠即時發出警報。",
     "keywords": [
-      "水",
-      "apple",
-      "sex"
+      "煙霧探測器",
+      "smoke detector",
+      "fire alarm"
     ]
-  }
+  },
   {
-    "name": "360火器",
-    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "name": "消防斧",
+    "description": "用於破壞障礙或進入受困空間的專業工具。",
     "keywords": [
-      "滅火器",
-      "extinguisher",
-      "000"
+      "消防斧",
+      "fire axe",
+      "rescue axe"
     ]
-  }
+  },
   {
-    "name": "999",
-    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "name": "呼吸器",
+    "description": "在有毒或缺氧環境中供應空氣的裝備，保護消防員安全。",
     "keywords": [
-      "9",
-      "8",
-      "fxtinguisher"
+      "呼吸器",
+      "breathing apparatus",
+      "SCBA"
+    ]
+  },
+  {
+    "name": "逃生繩",
+    "description": "協助從高樓緊急撤離的專用繩索。",
+    "keywords": [
+      "逃生繩",
+      "escape rope",
+      "rescue rope"
+    ]
+  },
+  {
+    "name": "消防手套",
+    "description": "保護手部免受高溫及割傷的裝備。",
+    "keywords": [
+      "消防手套",
+      "fire gloves",
+      "protective gloves"
     ]
   }
 ]
