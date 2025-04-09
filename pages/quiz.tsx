@@ -32,13 +32,26 @@ const QuizPage = () => {
       <h2 className="text-lg">{question.question}</h2>
       <ul>
         {question.options.map((opt, idx) => {
-          let color = ''
+          const isCorrect = idx === question.answer
+          const isSelected = selected === idx
+
+          let textColor = ''
+          let feedback = ''
+
           if (selected !== null) {
-            if (idx === question.answer) color = 'text-green-600'
-            else if (idx === selected) color = 'text-red-600'
+            if (isSelected && isCorrect) {
+              textColor = 'text-green-600'
+              feedback = '（正確） ✅'
+            } else if (isSelected && !isCorrect) {
+              textColor = 'text-red-600'
+              feedback = '（錯誤） ❌'
+            } else if (!isSelected && isCorrect) {
+              feedback = '✅'
+            }
           }
+
           return (
-            <li key={idx} className={color}>
+            <li key={idx} className={`my-1 ${textColor}`}>
               <label>
                 <input
                   type="radio"
@@ -47,8 +60,7 @@ const QuizPage = () => {
                   disabled={selected !== null}
                   checked={selected === idx}
                   onChange={() => handleSelect(idx)}
-                />{' '}
-                {opt}
+                />{' '}{opt} {feedback}
               </label>
             </li>
           )
@@ -56,7 +68,7 @@ const QuizPage = () => {
       </ul>
 
       {selected !== null && (
-        <div className="space-x-4">
+        <div className="space-x-4 pt-4">
           <button
             className="px-4 py-2 bg-blue-500 text-white rounded"
             onClick={() => window.location.reload()}
@@ -64,7 +76,7 @@ const QuizPage = () => {
             下一題
           </button>
           <Link href="/">
-            <button className="px-4 py-2 bg-gray-400 text-white rounded">
+            <button className="px-4 py-2 bg-gray-500 text-white rounded">
               返回主頁
             </button>
           </Link>
