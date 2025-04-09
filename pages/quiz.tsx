@@ -14,56 +14,48 @@ const quizData = [
 ]
 
 const QuizPage = () => {
-  const [current, setCurrent] = useState(0)
-  const [selected, setSelected] = useState(null)
-  const [score, setScore] = useState(0)
-  const [showResult, setShowResult] = useState(false)
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(quizData.length).fill(null))
 
-  const currentQuestion = quizData[current]
-
-  const handleSubmit = () => {
-    if (selected === currentQuestion.answer) {
-      setScore(score + 1)
-    }
-    if (current + 1 < quizData.length) {
-      setCurrent(current + 1)
-      setSelected(null)
-    } else {
-      setShowResult(true)
-    }
-  }
-
-  if (showResult) {
-    return (
-      <div className="p-6">
-        <h1>✅ 完成測驗</h1>
-        <p>你的得分：{score} / {quizData.length}</p>
-      </div>
-    )
+  const handleSelect = (questionIndex, optionIndex) => {
+    const updated = [...selectedAnswers]
+    updated[questionIndex] = optionIndex
+    setSelectedAnswers(updated)
   }
 
   return (
     <div className="p-6">
-      <h1>🧠 消防問答</h1>
-      <h2>{currentQuestion.question}</h2>
-      <ul className="mb-4">
-        {currentQuestion.options.map((opt, idx) => (
-          <li key={idx}>
-            <label>
-              <input
-                type="radio"
-                name="answer"
-                value={idx}
-                checked={selected === idx}
-                onChange={() => setSelected(idx)}
-              />{' '}{opt}
-            </label>
-          </li>
-        ))}
-      </ul>
-      <button onClick={handleSubmit} disabled={selected === null}>
-        提交
-      </button>
+      <h1>🧠 消防問答（即時顯示答案）</h1>
+      {quizData.map((q, idx) => (
+        <div key={idx} className="mb-6">
+          <h2 className="font-semibold">{idx + 1}. {q.question}</h2>
+          <ul>
+            {q.options.map((opt, optIdx) => {
+              const selected = selectedAnswers[idx]
+              const isCorrect = q.answer === optIdx
+              const isSelected = selected === optIdx
+              let color = ''
+              if (selected !== null) {
+                if (isSelected && isCorrect) color = 'text-green-600'
+                else if (isSelected && !isCorrect) color = 'text-red-600'
+                else if (isCorrect) color = 'text-green-600'
+              }
+              return (
+                <li key={optIdx} className={color}>
+                  <label>
+                    <input
+                      type="radio"
+                      name={`question-${idx}`}
+                      value={optIdx}
+                      checked={isSelected}
+                      onChange={() => handleSelect(idx, optIdx)}
+                    />{' '}{opt}
+                  </label>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      ))}
     </div>
   )
 }
