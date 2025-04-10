@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
@@ -14,7 +15,7 @@ const HomePage = () => {
       .catch(() => setNotice(null))
   }, [])
 
-  const navClass = (route: string) => `py-3 transition-all duration-200 hover:-translate-y-1 hover:bg-gray-100 ${
+  const navClass = (route: string) => `py-3 transition-all duration-200 hover-raise hover:bg-gray-100 ${
     path === route ? 'bg-gray-100 font-bold' : ''}`
 
   return (
