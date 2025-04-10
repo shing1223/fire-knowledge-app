@@ -1,0 +1,1 @@
+export default function About() { return <div className='p-6'>關於我頁面</div> }

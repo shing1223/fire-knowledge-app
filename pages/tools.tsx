@@ -1,0 +1,1 @@
+export default function Tools() { return <div className='p-6'>消防工具查詢頁面</div> }
