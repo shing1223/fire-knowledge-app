@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -31,7 +32,6 @@ const HomePage = () => {
           <p>這裡是你學習消防知識的最佳起點，實用、互動、無壓力。</p>
         </div>
       </main>
-
       <footer className="bg-white border-t border-gray-200 py-6 px-4">
         <div className="flex flex-col sm:flex-row justify-center sm:justify-around gap-4">
           <Link href="/quiz">
