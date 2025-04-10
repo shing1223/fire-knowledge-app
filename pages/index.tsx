@@ -19,17 +19,10 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-between bg-gradient-to-br from-red-50 to-orange-100 text-gray-900">
-      {/* 頂部主題 */}
-      <header className="bg-gradient-to-r from-red-700 to-orange-600 text-white py-8 px-4 shadow-md">
-        <h1 className="text-5xl font-extrabold tracking-wide text-center">消防天書</h1>
-        <p className="text-sm text-center italic opacity-90">非官方 · 一起學消防</p>
-      </header>
-
-      {/* 中間內容（訊息欄） */}
       <main className="flex-grow px-6 py-10 max-w-3xl mx-auto w-full">
         {notice && (
           <section
-            className={\`bg-white/90 border shadow-md p-5 mb-8 rounded-xl \${noticeColor[notice.type] || 'border-gray-300 text-gray-700'}\`}
+            className={`bg-white/90 border shadow-md p-5 mb-8 rounded-xl ${noticeColor[notice.type] || 'border-gray-300 text-gray-700'}`}
           >
             <p className="font-medium">📢 {notice.message}</p>
           </section>
@@ -39,7 +32,6 @@ const HomePage = () => {
         </div>
       </main>
 
-      {/* 底部導覽 */}
       <footer className="bg-white border-t border-gray-200 py-6 px-4">
         <div className="flex flex-col sm:flex-row justify-center sm:justify-around gap-4">
           <Link href="/quiz">
