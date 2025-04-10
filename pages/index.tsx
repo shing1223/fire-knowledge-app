@@ -12,45 +12,45 @@ const HomePage = () => {
       .catch(() => setNotice(null))
   }, [])
 
-  const noticeColor = {
-    info: 'border-blue-300 text-blue-700',
-    warning: 'border-yellow-400 text-yellow-800',
-    error: 'border-red-400 text-red-700',
-  }
-
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-white text-gray-900">
+    <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* 主標題區塊 */}
-      <header className="bg-rose-400 text-white text-center py-6">
-        <h1 className="text-4xl font-extrabold">消防天書</h1>
+      <div className="bg-[#ff6666] text-white py-6 px-4 text-center shadow">
+        <h1 className="text-3xl font-bold">消防天書</h1>
         <p className="text-sm mt-1">（非官方、非專業、僅供專業人士使用）</p>
-      </header>
+      </div>
 
-      {/* 訊息區塊 */}
-      <main className="flex-grow px-6 py-8 max-w-xl mx-auto w-full">
-        <h2 className="text-xl font-bold mb-2">訊息</h2>
-        {notice && (
-          <div className={`space-y-2 text-base ${noticeColor[notice.type] || 'text-black'}`}>
-            {Array.isArray(notice.message)
-              ? notice.message.map((msg, idx) => <p key={idx}>{msg}</p>)
-              : <p>{notice.message}</p>
-            }
-          </div>
-        )}
-      </main>
+      {/* 訊息清單區塊 */}
+      <div className="max-w-xl mx-auto px-4 py-6">
+        <h2 className="text-xl font-bold mb-2 border-b border-gray-300 pb-2">訊息</h2>
+        <ul className="space-y-2">
+          {notice && Array.isArray(notice.message) && notice.message.map((msg, idx) => (
+            <li key={idx} className="text-base text-gray-700">{msg}</li>
+          ))}
+        </ul>
+      </div>
 
-      {/* 底部導航 */}
-      <footer className="bg-maroon text-white py-4 px-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-center">
+      {/* 功能卡片區塊 */}
+      <div className="max-w-xl mx-auto px-4 grid gap-4 pb-10">
         <Link href="/quiz">
-          <div className="bg-white text-maroon py-3 rounded shadow font-semibold">進行消防問答</div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
+            <h3 className="text-lg font-semibold text-maroon">🔥 進行消防問答</h3>
+            <p className="text-sm text-gray-500 mt-1">透過互動問答增進知識</p>
+          </div>
         </Link>
         <Link href="/tools">
-          <div className="bg-white text-maroon py-3 rounded shadow font-semibold">查看<br />消防工具知識</div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
+            <h3 className="text-lg font-semibold text-maroon">🧰 消防工具知識</h3>
+            <p className="text-sm text-gray-500 mt-1">快速查閱常見工具用途</p>
+          </div>
         </Link>
         <Link href="/about">
-          <div className="bg-white text-maroon py-3 rounded shadow font-semibold">關於我</div>
+          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
+            <h3 className="text-lg font-semibold text-maroon">👤 關於我</h3>
+            <p className="text-sm text-gray-500 mt-1">創作理念與作者介紹</p>
+          </div>
         </Link>
-      </footer>
+      </div>
     </div>
   )
 }
