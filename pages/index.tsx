@@ -30,8 +30,8 @@ const HomePage = () => {
         </ul>
       </div>
 
-      {/* 功能卡片區塊 */}
-      <div className="max-w-xl mx-auto px-4 grid gap-4 pb-10">
+      {/* 功能卡片區塊（改為一排三格） */}
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 pb-10">
         <Link href="/quiz">
           <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
             <h3 className="text-lg font-semibold text-maroon">🔥 進行消防問答</h3>
