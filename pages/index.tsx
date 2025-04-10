@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -13,7 +12,7 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen bg-gray-50 text-gray-800 pb-20 relative">
       {/* 主標題區塊 */}
       <div className="bg-[#ff6666] text-white py-6 px-4 text-center shadow">
         <h1 className="text-3xl font-bold">消防天書</h1>
@@ -30,27 +29,26 @@ const HomePage = () => {
         </ul>
       </div>
 
-      {/* 功能卡片區塊（改為一排三格） */}
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 pb-10">
-        <Link href="/quiz">
-          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
-            <h3 className="text-lg font-semibold text-maroon">🔥 進行消防問答</h3>
-            <p className="text-sm text-gray-500 mt-1">透過互動問答增進知識</p>
-          </div>
-        </Link>
-        <Link href="/tools">
-          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
-            <h3 className="text-lg font-semibold text-maroon">🧰 消防工具知識</h3>
-            <p className="text-sm text-gray-500 mt-1">快速查閱常見工具用途</p>
-          </div>
-        </Link>
-        <Link href="/about">
-          <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer">
-            <h3 className="text-lg font-semibold text-maroon">👤 關於我</h3>
-            <p className="text-sm text-gray-500 mt-1">創作理念與作者介紹</p>
-          </div>
-        </Link>
-      </div>
+      {/* 底部固定導覽欄 */}
+      <footer className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow z-50">
+        <div className="grid grid-cols-3 divide-x text-center text-sm">
+          <Link href="/quiz">
+            <div className="py-3 hover:bg-gray-50">
+              <p className="text-maroon font-medium">🔥 問答</p>
+            </div>
+          </Link>
+          <Link href="/tools">
+            <div className="py-3 hover:bg-gray-50">
+              <p className="text-maroon font-medium">🧰 工具</p>
+            </div>
+          </Link>
+          <Link href="/about">
+            <div className="py-3 hover:bg-gray-50">
+              <p className="text-maroon font-medium">👤 關於</p>
+            </div>
+          </Link>
+        </div>
+      </footer>
     </div>
   )
 }
