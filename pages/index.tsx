@@ -33,7 +33,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Images
+          <image
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="File icon"
@@ -48,7 +48,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Images
+          <Image
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="Window icon"
@@ -63,7 +63,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <images
+          <image
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="Globe icon"
