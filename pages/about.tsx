@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <div>
       {/* Header */}
-      <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我</h1>
+      <header>
+        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我1</h1>
       </header>
 
       {/* Main */}
