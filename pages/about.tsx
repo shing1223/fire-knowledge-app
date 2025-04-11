@@ -28,7 +28,7 @@ const AboutPage = () => {
       </main>
 
       {/* Footer */}
-            <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
+            <footer>
         <div>
           <Link href="/quiz" legacyBehavior>
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">📘 問答</a>
