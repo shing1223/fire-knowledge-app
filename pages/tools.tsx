@@ -68,9 +68,9 @@ const ToolsPage = () => {
               📘 進行消防問答
             </button>
           </Link>
-          <Link href="/tools">
-            <button className="w-full bg-blue-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-blue-600 transition transform hover:scale-105">
-              🧰 查看消防工具
+          <Link href="/">
+            <button className="w-full bg-purple-600 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-700 transition transform hover:scale-105">
+              🔙 返回主頁
             </button>
           </Link>
           <Link href="/about">
