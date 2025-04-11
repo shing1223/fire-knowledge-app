@@ -28,20 +28,19 @@ const AboutPage = () => {
       </main>
 
       {/* Footer */}
-              <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
+      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full text-center px-4 border border-dashed border-blue-500">
           <Link href="/quiz" legacyBehavior>
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded">📘 問答</a>
+            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">📘 問答</a>
           </Link>
           <Link href="/tools" legacyBehavior>
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded">🧰 工具</a>
+            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🧰 工具</a>
           </Link>
           <Link href="/" legacyBehavior>
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded">🔙 返回</a>
+            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🔙 返回</a>
           </Link>
         </div>
       </footer>
-
     </div>
   )
 }
