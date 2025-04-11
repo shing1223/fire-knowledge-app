@@ -35,7 +35,7 @@ const HomePage = () => {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src="https://nextjs-template.vercel.app/file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -50,7 +50,7 @@ const HomePage = () => {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="https://nextjs-template.vercel.app/file.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -65,7 +65,7 @@ const HomePage = () => {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="https://nextjs-template.vercel.app/file.svg"
             alt="Globe icon"
             width={16}
             height={16}
