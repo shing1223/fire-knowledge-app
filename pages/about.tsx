@@ -3,26 +3,50 @@ import Link from 'next/link'
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-[var(--background)] p-8 flex flex-col items-center justify-center text-center">
-      <div className="bg-[var(--card-bg)] border border-[var(--card-border)] shadow-lg rounded-xl p-6 max-w-md w-full">
-        <Image
-          src="/author.png"
-          alt="作者 ICON"
-          width={120}
-          height={120}
-          className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
-        />
-        <h1 className="text-2xl font-bold text-[var(--primary)] mb-2">👨‍🚒 關於我</h1>
-        <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
-          嗨！我是這個消防學習平台的開發者。我的目標是讓防火教育變得簡單、有趣、易於接觸，提升社會對消防安全的意識。
-          希望你在這裡學到一些實用的知識！
-        </p>
-        <Link href="/">
-          <button className="px-5 py-2 rounded-lg bg-[var(--primary)] text-white hover:opacity-90 transition">
-            返回主頁
-          </button>
-        </Link>
-      </div>
+    <div className="flex flex-col justify-between min-h-screen">
+      {/* Header */}
+      <header className="py-6 text-center bg-white shadow">
+        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我</h1>
+      </header>
+
+      {/* Main */}
+      <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
+        <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg">
+          <Image
+            src="/author.png"
+            alt="作者 ICON"
+            width={120}
+            height={120}
+            className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
+          />
+          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">消防學習平台開發者</h2>
+          <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
+            嗨！我是這個平台的開發者，希望讓防火教育變得簡單、有趣、易於接觸，
+            提升社會對消防安全的認識與應變能力。
+          </p>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
+        <div className="grid grid-cols-3 w-full text-center">
+          <Link href="/quiz">
+            <button className="w-full bg-orange-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-600 transition transform hover:scale-105">
+              📘 進行消防問答（單題模式）
+            </button>
+          </Link>
+          <Link href="/tools">
+            <button className="w-full bg-blue-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-blue-600 transition transform hover:scale-105">
+              🧰 查看消防工具知識
+            </button>
+          </Link>
+          <Link href="/">
+            <button className="w-full bg-purple-600 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-700 transition transform hover:scale-105">
+              🔙 返回主頁
+            </button>
+          </Link>
+        </div>
+      </footer>
     </div>
   )
 }
