@@ -28,25 +28,19 @@ const AboutPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
-        <div className="grid grid-cols-3 w-full text-center">
-          <Link href="/quiz">
-            <button className="w-full bg-orange-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-600 transition transform hover:scale-105">
-              📘 進行消防問答（單題模式）
-            </button>
-          </Link>
-          <Link href="/tools">
-            <button className="w-full bg-blue-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-blue-600 transition transform hover:scale-105">
-              🧰 查看消防工具知識
-            </button>
-          </Link>
-          <Link href="/">
-            <button className="w-full bg-purple-600 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-700 transition transform hover:scale-105">
-              🔙 返回主頁
-            </button>
-          </Link>
-        </div>
-      </footer>
+<footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
+  <div className="grid grid-cols-3 w-full text-center">
+    <Link href="/quiz" legacyBehavior>
+      <a>📘 問答</a>
+    </Link>
+    <Link href="/tools" legacyBehavior>
+      <a>🧰 工具</a>
+    </Link>
+    <Link href="/" legacyBehavior>
+      <a>🔙 返回</a>
+    </Link>
+  </div>
+</footer>
     </div>
   )
 }
