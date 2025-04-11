@@ -57,20 +57,7 @@ footer {
 }
 
 
-footer a {
-  display: block;
-  padding: 1rem;
-  background: var(--primary-light);
-  color: var(--foreground);
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
-}
 
-footer a:hover {
-  background: var(--primary-dark);
-  color: white;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
