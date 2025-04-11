@@ -43,7 +43,10 @@ main {
 
 footer {
   background: #fff;
-  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--card-border);
+  padding: 0;
+  text-align: center;
+  display: grid;
   font-size: 0.875rem;
   color: var(--foreground);
   box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
