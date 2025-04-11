@@ -11,8 +11,7 @@ const AboutPage = () => {
 
       {/* Main */}
       <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
-        {/* <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg"> */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full max-w-screen-md mx-auto text-center px-4">
+        <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg">
           <Image
             src="/author.png"
             alt="作者 ICON"
