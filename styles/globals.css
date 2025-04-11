@@ -47,7 +47,7 @@ footer {
   padding: 0;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(1, 3fr);
+  grid-template-columns: repeat(3, 1fr);
   font-size: 0.875rem;
   color: var(--foreground);
   box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
@@ -55,6 +55,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
 footer a {
   display: block;
