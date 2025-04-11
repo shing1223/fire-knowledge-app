@@ -57,10 +57,10 @@ footer {
 }
 
 footer a {
-  /* display: block; */
+  display: block;
   padding: 1rem;
   background: var(--primary-light);
-  /* color: var(--foreground); ← 移除這一行，讓 Tailwind 控制文字色 */
+  color: var(--foreground);
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
