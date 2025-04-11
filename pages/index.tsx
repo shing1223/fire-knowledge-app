@@ -26,14 +26,14 @@ const HomePage = () => {
         </div>
       </div>
 
-            <div className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+            <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <Images
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="File icon"
@@ -48,7 +48,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <Images
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="Window icon"
@@ -63,7 +63,7 @@ const HomePage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <images
             aria-hidden
             src="https://nextjs-template.vercel.app/file.svg"
             alt="Globe icon"
@@ -72,7 +72,7 @@ const HomePage = () => {
           />
           Go to nextjs.org →
         </a>
-      </div>
+      </footer>
     </div>
   )
 }
