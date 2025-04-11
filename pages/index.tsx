@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const HomePage = () => {
   return (
-  <div className={`${noto.variable} font-sans`}>
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 py-10">
       <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
         <h1 className="text-4xl font-extrabold text-red-600 mb-4">🔥 消防天書</h1>
         <p className="text-gray-600 mb-10">學習消防知識、工具用途與測驗平台</p>
