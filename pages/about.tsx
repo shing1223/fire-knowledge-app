@@ -28,7 +28,7 @@ const AboutPage = () => {
       </main>
 
       {/* Footer */}
-            <footer>
+            <div>
         <div>
           <Link href="/quiz" legacyBehavior>
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">📘 問答</a>
@@ -40,7 +40,7 @@ const AboutPage = () => {
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🔙 返回</a>
           </Link>
         </div>
-      </footer>
+      </div>
     </div>
   )
 }
