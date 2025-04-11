@@ -10,8 +10,8 @@ const AboutPage = () => {
       </header>
 
       {/* Main */}
-      <main">
-        <div">
+      <main>
+        <div>
           <Image
             src="/author.png"
             alt="作者 ICON"
