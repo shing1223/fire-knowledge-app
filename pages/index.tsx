@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-const HomePage = () => {
+export default function HomePage() {
   const [notices, setNotices] = useState<string[]>([])
 
   useEffect(() => {
@@ -47,5 +47,3 @@ const HomePage = () => {
     </div>
   )
 }
-
-export default HomePage
