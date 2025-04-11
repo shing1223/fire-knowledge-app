@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div>
       {/* Header */}
       <header>
-        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我1</h1>
+        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我2</h1>
       </header>
 
       {/* Main */}
