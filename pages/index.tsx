@@ -37,8 +37,8 @@ const HomePage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner border-t text-sm py-4">
-        <div className="flex justify-around max-w-md mx-auto">
+      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
+        <div className="grid grid-cols-3 w-full text-center">
           <Link href="/quiz" className="text-orange-600 hover:underline">
             <button className="w-full bg-orange-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-600 transition transform hover:scale-105">
               📘 進行消防問答（單題模式）
