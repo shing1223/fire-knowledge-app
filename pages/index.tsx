@@ -1,3 +1,7 @@
+import Link from 'next/link'
+
+const HomePage = () => {
+  return (
 <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10 text-center bg-gray-50">
   <div className="max-w-xl w-full flex flex-col gap-8 items-center">
     <h1 className="text-5xl font-extrabold text-red-600 leading-tight">🔥 消防天書</h1>
@@ -22,3 +26,8 @@
     </div>
   </div>
 </div>
+
+  )
+}
+
+export default HomePage
