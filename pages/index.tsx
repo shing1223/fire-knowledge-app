@@ -2,12 +2,16 @@ import Link from 'next/link'
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 py-10">
-      <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
-        <h1 className="text-4xl text-center font-bold text-red-600">🔥 消防天書</h1>
-        <p className="text-gray-600 mb-10">學習消防知識、工具用途與測驗平台</p>
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 py-10 text-center">
+      <div className="max-w-md w-full flex flex-col gap-8 items-center">
+        <h1 className="text-5xl sm:text-6xl font-extrabold text-red-600 leading-tight">
+          🔥 消防天書
+        </h1>
+        <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
+          學習消防知識、工具用途與測驗平台
+        </p>
 
-        <div className="space-y-4">
+        <div className="w-full space-y-4">
           <Link href="/quiz">
             <button className="w-full bg-orange-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-600 transition transform hover:scale-105">
               📘 進行消防問答（單題模式）
