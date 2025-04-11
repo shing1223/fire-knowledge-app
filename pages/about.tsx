@@ -37,7 +37,7 @@ const AboutPage = () => {
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🧰 工具</a>
           </Link>
           <Link href="/" legacyBehavior>
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🔙 返回</a>
+            <a className="block text-white bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block rounded border border-red-400">🔙 返回</a>
           </Link>
         </div>
             </footer>
