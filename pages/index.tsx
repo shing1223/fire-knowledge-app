@@ -5,7 +5,7 @@ const HomePage = () => {
   const [notices, setNotices] = useState<string[]>([])
 
   useEffect(() => {
-    fetch('/data/notice.json')
+    fetch('../data/notice.json')
       .then(res => res.json())
       .then(data => setNotices(data?.message || []))
       .catch(() => setNotices([]))
