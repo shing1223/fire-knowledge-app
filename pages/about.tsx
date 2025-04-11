@@ -10,8 +10,8 @@ const AboutPage = () => {
       </header>
 
       {/* Main */}
-      <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
-        <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg">
+      <main">
+        <div">
           <Image
             src="/author.png"
             alt="作者 ICON"
