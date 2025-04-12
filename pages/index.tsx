@@ -48,18 +48,6 @@ const HomePage = () => {
           <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
         </Link>
       </footer>
-
-          <footer>
-        <Link href="/quiz">
-          <a">📘 問答</a>
-        </Link>
-        <Link href="/tools">
-          <a className="text-center">🧰 工具</a>
-        </Link>
-        <Link href="/about">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
-        </Link>
-      </footer>
     </div>
   )
 }
