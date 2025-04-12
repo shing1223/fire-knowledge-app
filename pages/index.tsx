@@ -15,7 +15,7 @@ const HomePage = () => {
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
       <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">🔥 消防天書</h1>
+        <h1 className="text-4xl font-extrabold text-red-600">🔥 天書</h1>
       </header>
 
       {/* Main */}
@@ -35,19 +35,6 @@ const HomePage = () => {
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
-        <Link href="/quiz">
-          <a>📘 問答</a>
-        </Link>
-        <Link href="/tools">
-          <a className="text-center">🧰 工具</a>
-        </Link>
-        <Link href="/about">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
-        </Link>
-      </footer>
 
             {/* Footer */}
       <footer>
