@@ -37,17 +37,17 @@ const HomePage = () => {
       </main>
       
        {/* Footer */}
-      <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
-        <Link href="/quiz">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
-        </Link>
-        <Link href="/tools">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🧰 工具</a>
-        </Link>
-        <Link href="/about">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
-        </Link>
-      </footer>
+        <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
+          <Link href="/quiz">
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
+          </Link>
+          <Link href="/tools">
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">🧰 工具</a>
+          </Link>
+          <Link href="/about">
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
+          </Link>
+        </footer>
     </div>
   )
 }
