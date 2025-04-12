@@ -1,11 +1,11 @@
 [
   {
-    "name": "滅火器",
-    "description": "用於撲滅初起火災的小型裝置，常見於各場所。",
+    "name": "TIC",
+    "description": "火災模式","評估模式",
     "keywords": [
-      "滅火器",
-      "extinguisher",
-      "fire extinguisher"
+      "熱能探測器",
+      "熱能顯像機",
+      "argus"
     ]
   },
   {
@@ -19,6 +19,7 @@
   },
   {
     "name": "消防斧",
+    "description": "用於破壞障礙或進入受困空間的專業工具。",
     "description": "用於破壞障礙或進入受困空間的專業工具。",
     "keywords": [
       "消防斧",
