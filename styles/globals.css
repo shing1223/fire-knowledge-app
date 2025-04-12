@@ -44,10 +44,10 @@ main {
 footer {
   background: #fff;
   border-top: 1px solid var(--card-border);
-  padding: 0;
+  padding: 1rem;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(1, 3fr);
+  display: flex;
+  justify-content: space-around;
   font-size: 0.875rem;
   color: var(--foreground);
   box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
@@ -57,18 +57,14 @@ footer {
 }
 
 footer a {
-  display: block;
-  padding: 1rem;
-  background: var(--primary-light);
   color: var(--foreground);
-  font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 footer a:hover {
-  background: var(--primary-dark);
-  color: white;
+  color: var(--primary);
 }
 
 /* Responsive Design */
