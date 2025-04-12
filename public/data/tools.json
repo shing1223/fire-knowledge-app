@@ -1,5 +1,13 @@
 [
   {
+  "name": "NATO",
+  "description": "A = Alpha\nB = Bravo\nC = Charlie\nD = Delta\nE = Echo\nF = Foxtrot\nG = Golf\nH = Hotel\nI = India\nJ = Juliet\nK = Kilo\nL = Lima\nM = Mike\nN = November\nO = Oscar\nP = Papa\nQ = Quebec\nR = Romeo\nS = Sierra\nT = Tango\nU = Uniform\nV = Victor\nW = Whiskey\nX = X-ray\nY = Yankee\nZ = Zulu",
+      "keywords": [
+      "NATO",
+      "Alpha",
+      "Bravo"
+  },
+  {
     "name": "TIC",
     "description": "火災模式\n評估模式",
     "keywords": [
