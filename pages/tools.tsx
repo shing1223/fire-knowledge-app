@@ -36,15 +36,15 @@ const ToolsPage = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
-      <div className="flex flex-col justify-between min-h-screen">
+      <div className="flex flex-col min-h-screen">
         {/* Header */}
-        <header className="py-6 text-center bg-gradient-to-r from-red-500 to-orange-400 text-white shadow">
-          <h1 className="text-4xl font-extrabold">🧰 消防工具搜尋</h1>
+        <header className="bg-[var(--header-bg)] text-white text-center font-bold shadow px-4 py-2 sm:py-3 md:py-4 text-sm sm:text-lg md:text-xl">
+          🧰 消防工具搜尋
         </header>
 
         {/* Main */}
-        <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
-          <div className="max-w-4xl w-full">
+        <main className="flex-1 overflow-y-auto px-4 py-6 bg-gray-50 text-center">
+          <div className="max-w-4xl w-full pb-20">
             <input
               type="text"
               placeholder="請輸入工具名稱（中或英文）..."
@@ -95,13 +95,13 @@ const ToolsPage = () => {
         {/* Footer */}
         <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
           <Link href="/quiz">
-            <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
           </Link>
           <Link href="/">
-            <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🔙 返回</a>
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">🔙 返回</a>
           </Link>
           <Link href="/about">
-            <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
+            <a className="text-center text-xl font-bold py-4 bg-[var(--foreground)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
           </Link>
         </footer>
       </div>
