@@ -61,24 +61,16 @@ const ToolsPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
-        <div className="grid grid-cols-3 w-full text-center">
-          <Link href="/quiz">
-            <button className="w-full bg-orange-500 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-600 transition transform hover:scale-105">
-              📘 進行消防問答
-            </button>
-          </Link>
-          <Link href="/">
-            <button className="w-full bg-purple-600 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-700 transition transform hover:scale-105">
-              🔙 返回主頁
-            </button>
-          </Link>
-          <Link href="/about">
-            <button className="w-full bg-purple-600 text-white py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-purple-700 transition transform hover:scale-105">
-              👤 關於我
-            </button>
-          </Link>
-        </div>
+      <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
+        <Link href="/quiz">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
+        </Link>
+        <Link href="/">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🔙 返回</a>
+        </Link>
+        <Link href="/about">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
+        </Link>
       </footer>
     </div>
   )
