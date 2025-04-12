@@ -11,6 +11,7 @@
   {
     "name": "煙霧探測器",
     "description": "用於感測火災時的煙霧，能夠即時發出警報。",
+    "category": "DRRT",
     "keywords": [
       "煙霧探測器",
       "smoke detector",
