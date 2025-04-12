@@ -14,9 +14,9 @@ const HomePage = () => {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
-      <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">🔥 天書</h1>
-      </header>
+      <header className="py-3 text-center bg-gradient-to-r from-red-500 to-orange-400 text-white shadow">
+          <h1 className="text-2xl font-extrabold">🧰 消防工具搜尋</h1>
+        </header>
 
       {/* Main */}
       <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
