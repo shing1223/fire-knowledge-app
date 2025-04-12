@@ -20,11 +20,11 @@ const ToolsPage = () => {
       setFiltered([])
     } else {
       const result = tools.filter(tool =>
-  tool.name.toLowerCase().includes(search.trim().toLowerCase()) ||
-  tool.keywords.some((kw: string) =>
-    kw.toLowerCase().includes(search.trim().toLowerCase())
-  )
-)
+        tool.name.toLowerCase().includes(search.trim().toLowerCase()) ||
+        tool.keywords.some((kw: string) =>
+          kw.toLowerCase().includes(search.trim().toLowerCase())
+        )
+      )
       setFiltered(result)
     }
   }, [search, tools])
@@ -51,9 +51,9 @@ const ToolsPage = () => {
               {filtered.map((tool, idx) => (
                 <li key={idx} className="mb-4 border-b pb-3">
                   <h2 className="text-lg font-semibold text-[var(--primary)]">{tool.name}</h2>
-                  <p className="text-sm text-gray-700 whitespace-pre-line">
-                    {tool.description.replace(/\\n/g, '\n')}
-                  </p>
+                  {tool.description.split('\\n').map((line: string, i: number) => (
+                    <p key={i} className="text-sm text-gray-700">{line}</p>
+                  ))}
                 </li>
               ))}
             </ul>
