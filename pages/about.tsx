@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
       <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我222</h1>
+        <h1 className="text-4xl font-extrabold text-red-600">👤 關於我</h1>
       </header>
 
       {/* Main */}
@@ -30,13 +30,13 @@ const AboutPage = () => {
       {/* Footer */}
       <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
         <div className="grid grid-cols-3 w-full text-center gap-px">
-          <Link href="/quiz" legacyBehavior>
+          <Link href="/quiz">
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">📘 問答</a>
           </Link>
-          <Link href="/tools" legacyBehavior>
+          <Link href="/tools">
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">🧰 工具</a>
           </Link>
-          <Link href="/" legacyBehavior>
+          <Link href="/">
             <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">🔙 返回</a>
           </Link>
         </div>
