@@ -42,10 +42,10 @@ const ToolsPage = () => {
           <input
             type="text"
             placeholder="請輸入工具名稱（中或英文）..."
-            className="border p-2 mb-4 w-full rounded"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+            className="border p-2 mb-4 w-full rounded text-base"
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+/>
           {filtered.length > 0 ? (
             <ul className="mb-6 space-y-3">
               {filtered.map((tool, idx) => (
