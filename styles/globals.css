@@ -61,8 +61,8 @@ footer {
   border-top: 1px solid var(--card-border);
   padding: 1rem;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   font-size: 0.875rem;
   color: var(--foreground);
   box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
