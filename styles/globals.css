@@ -1,1 +1,87 @@
+:root {
+  --primary: #ff5722;
+  --primary-dark: #e64a19;
+  --primary-light: #ffe0b2;
+  --secondary: #2196f3;
+  --accent: #9c27b0;
+  --background: #f9fafb;
+  --foreground: #1f2937;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --header-bg: linear-gradient(to right, #ef4444, #f59e0b);
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--header-bg);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid var(--card-border);
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.875rem;
+  color: var(--foreground);
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  display: block;
+  padding: 1rem;
+  background: var(--primary-light);
+  color: var(--foreground);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+  background: var(--primary-dark);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
