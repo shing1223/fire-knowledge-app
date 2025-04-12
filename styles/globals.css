@@ -1,8 +1,5 @@
-
 :root {
   --primary: #ff5722;
-  --primary-dark: #e64a19;
-  --primary-light: #ffe0b2;
   --secondary: #2196f3;
   --accent: #9c27b0;
   --background: #f9fafb;
@@ -41,6 +38,23 @@ main {
   align-items: center;
 }
 
+.notice-board {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.notice-board h2 {
+  font-size: 1.125rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
 footer {
   background: #fff;
   border-top: 1px solid var(--card-border);
@@ -76,6 +90,22 @@ footer a:hover {
 
   main {
     padding: 1rem;
+  }
+
+  .notice-board {
+    padding: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notice-board h2 {
+    font-size: 1rem;
   }
 
   footer {
