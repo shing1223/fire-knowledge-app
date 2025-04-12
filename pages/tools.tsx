@@ -31,8 +31,8 @@ const ToolsPage = () => {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
-      <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">🧰 消防工具搜尋</h1>
+      <header className="py-6 text-center bg-gradient-to-r from-red-500 to-orange-400 text-white shadow">
+        <h1 className="text-4xl font-extrabold">🧰 消防工具搜尋</h1>
       </header>
 
       {/* Main */}
@@ -48,9 +48,11 @@ const ToolsPage = () => {
           {filtered.length > 0 ? (
             <ul className="mb-6 space-y-3">
               {filtered.map((tool, idx) => (
-                <li key={idx} className="mb-2">
-                  <h2 className="text-lg font-semibold">{tool.name}</h2>
-                  <p className="text-sm text-gray-700">{tool.description}</p>
+                <li key={idx} className="mb-4 border-b pb-3">
+                  <h2 className="text-lg font-semibold text-[var(--primary)]">{tool.name}</h2>
+                  <p className="text-sm text-gray-700 whitespace-pre-line">
+                    {tool.description.replace(/\\n/g, '\n')}
+                  </p>
                 </li>
               ))}
             </ul>
