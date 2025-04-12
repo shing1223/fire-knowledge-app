@@ -20,10 +20,11 @@ const ToolsPage = () => {
       setFiltered([])
     } else {
       const result = tools.filter(tool =>
-        tool.keywords.some((kw: string) =>
-          kw.toLowerCase().includes(search.trim().toLowerCase())
-        )
-      )
+  tool.name.toLowerCase().includes(search.trim().toLowerCase()) ||
+  tool.keywords.some((kw: string) =>
+    kw.toLowerCase().includes(search.trim().toLowerCase())
+  )
+)
       setFiltered(result)
     }
   }, [search, tools])
