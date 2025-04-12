@@ -44,8 +44,8 @@ const HomePage = () => {
         <Link href="/tools">
           <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🧰 工具</a>
         </Link>
-        <Link href="/">
-          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🔙 返回</a>
+        <Link href="/about">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">👤 關於</a>
         </Link>
       </footer>
     </div>
