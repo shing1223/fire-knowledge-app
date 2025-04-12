@@ -5,8 +5,10 @@ const AboutPage = () => {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
-      <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">👤 關23於我</h1>
+      <header className="py-6 text-center bg-gradient-to-r from-red-500 to-orange-400 text-white shadow">
+        <h1 className="text-4xl font-extrabold flex items-center justify-center gap-2">
+          <span role="img" aria-label="icon">👤</span> 關於我
+        </h1>
       </header>
 
       {/* Main */}
@@ -28,18 +30,16 @@ const AboutPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner border-t text-sm py-4 w-full">
-        <div className="grid grid-cols-3 w-full text-center gap-px">
-          <Link href="/quiz">
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">📘 問答</a>
-          </Link>
-          <Link href="/tools">
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">🧰 工具</a>
-          </Link>
-          <Link href="/">
-            <a className="bg-[var(--primary-light)] hover:bg-[var(--primary-dark)] text-white py-3 font-semibold block">🔙 返回</a>
-          </Link>
-        </div>
+      <footer className="bg-black text-white text-sm w-full grid grid-cols-3">
+        <Link href="/quiz">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">📘 問答</a>
+        </Link>
+        <Link href="/tools">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🧰 工具</a>
+        </Link>
+        <Link href="/">
+          <a className="text-center text-xl font-bold py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition">🔙 返回</a>
+        </Link>
       </footer>
     </div>
   )
