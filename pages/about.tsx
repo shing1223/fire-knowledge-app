@@ -7,7 +7,7 @@ const AboutPage = () => {
       {/* Header */}
       <header className="py-6 text-center bg-gradient-to-r from-red-500 to-orange-400 text-white shadow">
         <h1 className="text-4xl font-extrabold flex items-center justify-center gap-2">
-          <span role="img" aria-label="icon">👤</span> 關於我
+          <span role="img" aria-label="icon">👤</span> 關於
         </h1>
       </header>
 
@@ -23,8 +23,9 @@ const AboutPage = () => {
           />
           <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">消防學習平台開發者</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
-            嗨！我是這個平台的開發者，希望讓防火教育變得簡單、有趣、易於接觸，
-            提升社會對消防安全的認識與應變能力。
+            古云: 閒時留來急時用，急時先搵無撚用；所有重要資料請用腦記住。
+            此平台提供的資料均可在網上找到，並非任何機密資料；
+            如認為平台內的資料有涉及侵權或錯誤等問題，請立刻聯絡本人作出修改、糾正或刪除有關資料。
           </p>
         </div>
       </main>
