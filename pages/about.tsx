@@ -32,7 +32,10 @@ const AboutPage = () => {
           /><br />
           
           <Link href="https://www.instagram.com/_chuyuksung_/">
-            <a>DM: 豬小姐/ WhatsApp: 6096 9520</a>
+            <a>Instagram: 豬肉鬆小姐</a>
+          </Link><br />
+          <Link href="https://wa.me/85260969520">
+            <a>WhatsApp: 6096 9520</a>
           </Link>
         </div>
       </main>
