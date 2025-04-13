@@ -21,11 +21,15 @@ const AboutPage = () => {
             height={120}
             className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
           />
-          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">消防學習平台開發者</h2>
+          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">古云: 閒時留來急時用，急時先搵無撚用；所有重要資料請用腦記住。</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
-            古云: 閒時留來急時用，急時先搵無撚用；所有重要資料請用腦記住。<br />
-            此平台提供的資料均可在網上找到，並非任何機密資料；<br />
-            如認為平台內的資料有涉及侵權或錯誤等問題，請立刻聯絡本人作出修改、糾正或刪除有關資料。<br />
+            <br />
+            本平台為免費公開的知識學習工具，僅供個人學習之用。<br />
+            所有資料來自公開來源，力求準確，但不保證內容的完整性或最新性。使用者應自行判斷資料的適用性及正確性。<br />
+            平台提供之內容不構成任何專業建議或官方指引，不應被視為緊急應變或操作指南。如需專業協助，請聯絡相關機構。<br />
+            使用本平台即表示您同意自行承擔使用風險。如平台內容被認為涉及版權、錯誤或不當資訊，請立即聯絡本人，並將儘快處理修改或刪除。<br />
+            請合法使用本平台內容，並遵守當地法律及規範。<br />
+            
           </p>
         </div>
       </main>
