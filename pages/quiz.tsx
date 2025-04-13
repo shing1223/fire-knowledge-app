@@ -84,7 +84,7 @@ const QuizPage = () => {
               </button>
               <Link href="/">
                 <button className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
-                  返回主頁
+                  <h3>返回主頁</h3>
                 </button>
               </Link>
             </div>
