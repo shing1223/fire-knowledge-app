@@ -14,13 +14,6 @@ const AboutPage = () => {
       {/* Main */}
       <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
         <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg">
-          <Image
-            src="/author.png"
-            alt="作者 ICON"
-            width={120}
-            height={120}
-            className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
-          />
           <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">重要資料及數據請用腦記住，不要依賴平台。</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
             <br />
@@ -29,8 +22,14 @@ const AboutPage = () => {
             平台提供之內容不構成任何專業建議或官方指引，不應被視為緊急應變或操作指南。如需專業協助，請聯絡相關機構。<br /><br />
             使用本平台即表示您同意自行承擔使用風險。如平台內容被認為涉及版權、錯誤或不當資訊，請立即聯絡本人，並將儘快處理修改或刪除。<br /><br />
             請合法使用本平台，並遵守當地法律及規範。<br /><br /><br />
-            
           </p>
+          <Image
+            src="/author.png"
+            alt="作者 ICON"
+            width={120}
+            height={120}
+            className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
+          />
         </div>
       </main>
 
