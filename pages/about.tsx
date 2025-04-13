@@ -24,10 +24,8 @@ const AboutPage = () => {
           <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">消防學習平台開發者</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
             古云: 閒時留來急時用，急時先搵無撚用；所有重要資料請用腦記住。
-          </p>
-          <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
-            <br></br>此平台提供的資料均可在網上找到，並非任何機密資料；</br>
-            如認為平台內的資料有涉及侵權或錯誤等問題，請立刻聯絡本人作出修改、糾正或刪除有關資料。
+            <br>此平台提供的資料均可在網上找到，並非任何機密資料；</br>
+            br>如認為平台內的資料有涉及侵權或錯誤等問題，請立刻聯絡本人作出修改、糾正或刪除有關資料。</br>
           </p>
         </div>
       </main>
