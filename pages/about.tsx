@@ -36,7 +36,7 @@ const AboutPage = () => {
           </Link><br />
           <Link href="https://wa.me/85260969520">
             <a>WhatsApp: 6096 9520</a>
-          </Link>
+          </Link><br /><br />
         </div>
       </main>
 
