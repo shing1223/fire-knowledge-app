@@ -16,7 +16,7 @@ const HomePage = () => {
       {/* Header */}
       <header className="py-6 text-center bg-white shadow">
         <h1 className="text-4xl font-extrabold text-red-600">🔥 天書</h1>
-        <h4 className="text-4xl font-extrabold text-red-600">非官方、非專業·僅供專業人士使用</h1>
+        <h4 className="text-4xl font-extrabold text-red-600">非官方、非專業·僅供專業人士使用</h4>
       </header>
 
       {/* Main */}
