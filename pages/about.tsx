@@ -21,7 +21,7 @@ const AboutPage = () => {
             height={120}
             className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
           />
-          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">古云: 閒時留來急時用，急時先搵無撚用；所有重要資料請用腦記住。</h2>
+          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">所有重要資料請用腦記住。</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
             <br />
             本平台為免費公開的知識學習工具，僅供個人學習之用。<br />
