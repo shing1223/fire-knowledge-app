@@ -25,11 +25,15 @@ const AboutPage = () => {
           </p>
           <Image
             src="/author.png"
-            alt="作者 ICON"
+            alt="_chuyuksung_"
             width={120}
             height={120}
             className="rounded-full mx-auto mb-4 border-4 border-[var(--accent)]"
-          />
+          /><br />
+          
+          <Link href="https://www.instagram.com/_chuyuksung_/">
+            <a>DM: 豬小姐/ WhatsApp: 6096 9520</a>
+          </Link>
         </div>
       </main>
 
