@@ -14,7 +14,7 @@ const AboutPage = () => {
       {/* Main */}
       <main className="flex-1 flex items-center justify-center px-4 py-6 bg-gray-50 text-center">
         <div className="max-w-md w-full bg-white border border-gray-300 rounded-xl p-6 shadow-lg">
-          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">重要資料及數據請用腦記住，不要依賴平台。</h2>
+          <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">重要資料及數據請用腦記住，<br />不要依賴平台。</h2>
           <p className="text-[var(--foreground)] text-base leading-relaxed mb-6">
             <br />
             本平台為免費公開的知識學習工具，僅供個人學習之用。<br /><br />
