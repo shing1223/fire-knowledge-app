@@ -18,13 +18,12 @@
     ]
   },
   {
-    "name": "煙霧探測器",
-    "description": "用於感測火災時的煙霧，能夠即時發出警報。",
-    "category": "DRRT",
+    "name": "Firexpress",
+    "description": "3% AR-AFFF 預先與水混合\n50L/缸(5L濃縮泡+45L水)\n300巴樽->20巴工作壓力\n喉長30m\n射程: 4m 霧狀泡 22L/min\n10m噴射式泡 22L/min",
+    "category": "Fire",
     "keywords": [
-      "煙霧探測器",
-      "smoke detector",
-      "fire alarm"
+      "Fire Express",
+      "快速滅火系統"
     ]
   },
   {
