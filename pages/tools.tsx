@@ -73,7 +73,7 @@ const ToolsPage = () => {
                     <h2 className="text-lg font-bold text-[var(--primary)] mb-2">{tool.name}</h2>
                     <div className="space-y-1">
                       {tool.description.split('\n').map((line, i) => (
-                        <p key={i} className="text-sm text-gray-700 leading-snug">{line}</p>
+                        <p key={i} className="text-sm text-gray-700 leading-snug"> {line}</p>
                       ))}
                     </div>
                     {tool.link && (
