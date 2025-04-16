@@ -43,8 +43,8 @@ const ToolsPage = () => {
         </header>
 
         {/* Main */}
-        <main className="flex-1 flex items-center justify-center px-4 py-6 pb-20 bg-gray-50 text-center">
-          <div className="max-w-4xl w-full pb-20">
+        <main className="flex-1 flex items-center justify-center px-4 py-6 pb-32 bg-gray-50 text-center">
+          <div className="max-w-4xl w-full">
             <input
               type="text"
               placeholder="請輸入工具名稱（中或英文）..."
@@ -55,31 +55,11 @@ const ToolsPage = () => {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
+
             {filtered.length > 0 ? (
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                 {filtered.map((tool, idx) => (
                   <div key={idx} className="bg-white border border-gray-300 rounded-xl p-4 shadow hover:shadow-md transition text-left">
-  <h2 className="text-lg font-bold text-[var(--primary)] mb-2 underline underline-offset-4 decoration-[var(--primary-dark)]">{tool.name}</h2>
-  
-  <table className="w-full text-sm text-gray-700 border-separate border-spacing-y-1">
-    <tbody>
-      {tool.description.split('\n').map((line, i) => (
-        <tr key={i} className="border-b border-dashed border-gray-300">
-          <td className="py-1">• {line}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-
-  {tool.link && (
-    <div className="mt-3">
-      <a href={tool.link} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 underline">
-        🔗 查看更多
-      </a>
-    </div>
-  )}
-</div>
-
                     {tool.image && (
                       <div className="mb-3">
                         <Image
@@ -91,21 +71,22 @@ const ToolsPage = () => {
                         />
                       </div>
                     )}
-                    <h2 className="text-lg font-bold text-[var(--primary)] mb-2">{tool.name}</h2>
+                    <h2 className="text-lg font-bold text-[var(--primary)] mb-2 underline underline-offset-4 decoration-[var(--primary-dark)]">
+                      {tool.name}
+                    </h2>
                     <table className="w-full text-sm text-gray-700 border-separate border-spacing-y-1">
-  <tbody>
-    {tool.description.split('\n').map((line, i) => {
-      const [label, value] = line.includes(':') ? line.split(':') : ['說明', line]
-      return (
-        <tr key={i} className="border-b border-dashed border-gray-300 align-top">
-          <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24">{label.trim()}：</td>
-          <td className="text-left">{value.trim()}</td>
-        </tr>
-      )
-    })}
-  </tbody>
-</table>
-
+                      <tbody>
+                        {tool.description.split('\n').map((line, i) => {
+                          const [label, value] = line.includes(':') ? line.split(':') : ['說明', line]
+                          return (
+                            <tr key={i} className="border-b border-dashed border-gray-300 align-top">
+                              <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24">{label.trim()}：</td>
+                              <td className="text-left">{value.trim()}</td>
+                            </tr>
+                          )
+                        })}
+                      </tbody>
+                    </table>
                     {tool.link && (
                       <div className="mt-3">
                         <a href={tool.link} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 underline">
