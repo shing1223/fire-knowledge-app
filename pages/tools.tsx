@@ -44,7 +44,7 @@ const ToolsPage = () => {
 
         {/* Main */}
         <main className="flex-1 flex items-center justify-center px-4 py-6 pb-32 bg-gray-50 text-center">
-          <div className="max-w-4xl w-full pb-32"">
+          <div className="max-w-4xl w-full pb-32">
             <input
               type="text"
               placeholder="請輸入工具名稱（中或英文）..."
@@ -77,13 +77,21 @@ const ToolsPage = () => {
                     <table className="w-full text-sm text-gray-700 border-separate border-spacing-y-1">
                       <tbody>
                         {tool.description.split('\n').map((line, i) => {
-                          const [label, value] = line.includes(':') ? line.split(':') : ['說明', line]
-                          return (
-                            <tr key={i} className="border-b border-dashed border-gray-300 align-top">
-                              <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24">{label.trim()}：</td>
-                              <td className="text-left">{value.trim()}</td>
-                            </tr>
-                          )
+                          if (line.includes(':')) {
+                            const [label, value] = line.split(':')
+                            return (
+                              <tr key={i} className="border-b border-dashed border-gray-300 align-top">
+                                <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24">{label.trim()}：</td>
+                                <td className="text-left">{value.trim()}</td>
+                              </tr>
+                            )
+                          } else {
+                            return (
+                              <tr key={i} className="border-b border-dashed border-gray-300">
+                                <td colSpan={2} className="text-left py-1 pl-2">• {line.trim()}</td>
+                              </tr>
+                            )
+                          }
                         })}
                       </tbody>
                     </table>
