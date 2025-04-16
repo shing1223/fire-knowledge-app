@@ -41,7 +41,7 @@ main {
   padding-bottom: 10rem;
 }
 
-table, th, td {
+table {
   border: 1px solid black;
 }
 
