@@ -1,8 +1,37 @@
 [
   {
   "name": "NATO",
-  "description": "A = Alpha\nB = Bravo\nC = Charlie\nD = Delta\nE = Echo\nF = Foxtrot\nG = Golf\nH = Hotel\nI = India\nJ = Juliet\nK = Kilo\nL = Lima\nM = Mike\nN = November\nO = Oscar\nP = Papa\nQ = Quebec\nR = Romeo\nS = Sierra\nT = Tango\nU = Uniform\nV = Victor\nW = Whiskey\nX = X-ray\nY = Yankee\nZ = Zulu",
-      "keywords": [
+{
+  "description": {
+    "A": "Alpha",
+    "B": "Bravo",
+    "C": "Charlie",
+    "D": "Delta",
+    "E": "Echo",
+    "F": "Foxtrot",
+    "G": "Golf",
+    "H": "Hotel",
+    "I": "India",
+    "J": "Juliet",
+    "K": "Kilo",
+    "L": "Lima",
+    "M": "Mike",
+    "N": "November",
+    "O": "Oscar",
+    "P": "Papa",
+    "Q": "Quebec",
+    "R": "Romeo",
+    "S": "Sierra",
+    "T": "Tango",
+    "U": "Uniform",
+    "V": "Victor",
+    "W": "Whiskey",
+    "X": "X-ray",
+    "Y": "Yankee",
+    "Z": "Zulu"
+  }
+  },
+  "keywords": [
       "NATO",
       "Alpha",
       "Bravo"
