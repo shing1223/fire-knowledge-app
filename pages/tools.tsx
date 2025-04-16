@@ -44,7 +44,7 @@ const ToolsPage = () => {
 
         {/* Main */}
         <main className="flex-1 flex items-center justify-center px-4 py-6 pb-32 bg-gray-50 text-center">
-          <div className="max-w-4xl w-full">
+          <div className="max-w-4xl w-full pb-32"">
             <input
               type="text"
               placeholder="請輸入工具名稱（中或英文）..."
