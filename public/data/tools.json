@@ -18,6 +18,15 @@
     ]
   },
   {
+    "name": "test",
+    "description": "尺寸: 2.49 米\n材質: 鋁合金\n水壓: 10 巴\n出水量: 每分鐘 1200 公升",
+    "category": "test",
+    "keywords": [
+      "test",
+      "test2"
+    ]
+  },
+  {
     "name": "K970",
     "description": "· 二衝程\n· ",
     "category": "Fire",
