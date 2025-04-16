@@ -59,7 +59,7 @@ const ToolsPage = () => {
             {filtered.length > 0 ? (
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                 {filtered.map((tool, idx) => (
-                  <div key={idx} className="bg-white border border-gray-300 rounded-xl p-4 shadow hover:shadow-md transition text-left">
+                  <div key={idx} className="bg-white border border-gray-300 rounded-xl p-4 shadow hover:shadow-lg hover:border-[var(--primary)] transition text-left">
                     {tool.image && (
                       <div className="mb-3">
                         <Image
@@ -74,24 +74,20 @@ const ToolsPage = () => {
                     <h2 className="text-lg font-bold text-[var(--primary)] mb-2 underline underline-offset-4 decoration-[var(--primary-dark)]">
                       {tool.name}
                     </h2>
-                    <table className="w-full text-sm text-gray-700 border-separate border-spacing-y-1">
+                    <table className="w-full text-sm text-gray-700 border border-gray-400 border-collapse">
                       <tbody>
                         {tool.description.split('\n').map((line, i) => {
-                          if (line.includes(':')) {
-                            const [label, value] = line.split(':')
-                            return (
-                              <tr key={i} className="border-b border-dashed border-gray-300 align-top">
-                                <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24">{label.trim()}：</td>
-                                <td className="text-left">{value.trim()}</td>
-                              </tr>
-                            )
-                          } else {
-                            return (
-                              <tr key={i} className="border-b border-dashed border-gray-300">
-                                <td colSpan={2} className="text-left py-1 pl-2">• {line.trim()}</td>
-                              </tr>
-                            )
-                          }
+                          const [label, value] = line.includes(':') ? line.split(':') : [null, line]
+                          return label ? (
+                            <tr key={i} className="border border-gray-300 align-top hover:bg-orange-50">
+                              <td className="pr-2 font-semibold text-right text-[var(--foreground)] whitespace-nowrap w-24 border border-gray-300">{label.trim()}：</td>
+                              <td className="text-left border border-gray-300">{value.trim()}</td>
+                            </tr>
+                          ) : (
+                            <tr key={i} className="border border-gray-300 align-top hover:bg-orange-50">
+                              <td colSpan={2} className="text-left border border-gray-300">{value.trim()}</td>
+                            </tr>
+                          )
                         })}
                       </tbody>
                     </table>
