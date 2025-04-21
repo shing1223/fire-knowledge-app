@@ -30,7 +30,7 @@ const QuizPage = () => {
     <div className="flex flex-col justify-between min-h-screen">
       {/* Header */}
       <header className="py-6 text-center bg-white shadow">
-        <h1 className="text-4xl font-extrabold text-red-600">🧠 消防問答</h1>
+        <h1 className="text-4xl font-extrabold text-red-600">🧠 無極限洗腦問答</h1>
       </header>
 
       {/* Main */}
