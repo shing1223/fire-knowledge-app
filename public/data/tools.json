@@ -9,6 +9,14 @@
             ]
   },
   {
+  "name": "簡稱 - 消防車輛",
+  "description": "AAMC : 救護電單車\nAC : 救護高級人員專車\nAmb : 救護車\nAmb-LR : 救護吉甫車\nBAT : 呼吸器供應車\nBFT : 大型泡車\nCar : 高級人員專車\nCBt : 指揮船\nCCR : 加壓室\nCFT : 機場消防車\nCL : 起重運輸車\nCV : 膳食供應車\nDGL/DGV : 危險品貨車／ 小型貨車\nDT : 潛水裝備供應車\nDV : 潛水快艇\nEMAMC : 急救醫療電單車\nET : 緊急裝備供應車\nFBt-AG : 滅火輪 – 葛量洪號\nFBtT : 消防船拖架\nFIV : 第一截擊車\nFL : 泡液運輸車\nFMC : 消防電單車\nFT : 泡車\nFV : 小型泡液運輸車\nGPL : 一般用途貨車\nHA : 喉車\nHC : 氣墊船\nHFC : 喉泡車\nHP : 油壓升降台\nJSnkl : 無千斤頂升降台\nLMC : 小型電單車\nLPA – PM : 輕型泵車 – 泵車類型\nLPA – RM : 輕型泵車 – 救援車類型\nLPP : 輕型手提泵\nLRU : 細搶救車\nLT : 照明車\nMCL : 電單車\nMCTC : 流動傷者治療車\nMCU : 流動指揮車\nMFT : 迷你消防車\nMP : 泵車\nMPP : 重型手提泵\nMPV : 多種用途客貨車\nMRT : 迷你搶救車\nMT - PM : 小型泵車\nMT– RM : 小型搶救車\nMV : 小型客貨車\nPC : 載客車\nPGU : 手提發電機\nRA : 搶救車\nRHP : 後備重型泵車\nRIV : 快速截擊車\nSB : 快艇\nSCUBA : 自給式水底呼吸器\nSDDE : 水面供氣潛水裝置\nSnkl : 升降台\nTL : 旋轉台鋼梯車\nVAmb : 鄉村救護車\nWxP : 華積士手提泵\nWSV : 工程組貨車\nWTP : 浮水泵\n",
+  "keywords": [
+      "簡稱",
+      "nick"
+            ]
+  },
+  {
   "name": "「ICS」混凝土鋸",
   "description": "updating",
   "keywords": [
